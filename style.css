@@ -1,0 +1,55 @@
+
+
+/*
+ con rem il carattere si adatta se viene cambiato il 
+ carattere radice(di base) definito per l'intero 
+ documento html
+*/
+.head-banner{
+    background-color: #848484;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-image: url(img/img.jpg);
+    background-size: cover; /*l'immagine copre tutto il contenitore*/
+    background-position: center;/*posiziona al centro*/
+    background-blend-mode: multiply;/*combinazione img e colore di sfondo*/
+}
+
+.sezione-icone{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.bi{
+    width: 24px;
+    height: 24px; 
+}
+
+.sezione-immagini .immagine{
+    min-height: 30rem;
+    background-size: cover;
+    background-position: center;/*posiziona al centro*/
+}
+
+.sezione-immagini .testo{
+    padding: 3rem;
+}
+
+.recensione-singola img {
+    width: 150px; /* Cambia la grandezza delle immagini come preferisci */
+}
+/*media query, adatta lo stile alla pagine(dimensioni)
+  saranno applicate quando la largheza è pari o superiore
+  a 768 pixel
+  tablet
+  desktop
+*/
+@media screen and (min-width: 768px){
+    .head-banner{
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+    .sezione-immagini .testo{
+        padding: 7rem;
+    }
+}
